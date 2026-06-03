@@ -27,7 +27,7 @@ def run(stackargs):
     # optional variables
     stack.parse.add_optional(key="vpc_cidr",
                              types="str",
-                             default="10.0.0.0/16")
+                             default="10.1.0.0/16")
 
     # depends on the group0 leaf script (so substack content rolls up to parent)
     stack.add_script("williaumwu:::config0-automated-test-group0::resource_wrapper.sh")
